@@ -1,0 +1,241 @@
+body {
+    background: url("../img/bckground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main
+{
+    padding: 9% 0;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+input[type="file"]:hover
+{
+    cursor: pointer;
+}
+
+ .vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left
+{
+    padding: 25% 0;
+}
+
+form
+{
+    padding: 6% 3%;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: box-shadow ease-in-out .3s;
+}
+
+form:hover
+{
+    box-shadow: 2px 2px 2px 2px rgba(239,239,239,.2);
+}
+
+form h1
+{
+    text-align: center;
+}
+
+.error
+{
+    font-size: 20px;
+    color: #ff0000;
+}
+
+#modalHome
+{
+    z-index: 999;
+    position: fixed;
+    width: 50%;
+    height: 400px;
+    background: #333;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: none;
+}
+
+#modalHome img
+{
+    padding-top: 2%;
+    width: 5%;
+    margin-bottom: 10%;
+}
+
+#modalHome p
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+#modalHome button
+{
+    border: 1px solid #D8131A;
+    border-radius: 5px;
+    background: #D8131A;
+    margin-top: 10%;
+}
+
+#modalHome button:hover
+{
+    cursor: pointer;
+}
+
+
+/**********************/
+
+
+#modalDownload
+{
+    z-index: 999;
+    position: fixed;
+    width: 50%;
+    height: 400px;
+    background: #333;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: none;
+}
+
+#modalDownload img
+{
+    padding-top: 2%;
+    width: 5%;
+    margin-bottom: 10%;
+}
+
+#modalDownload p
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+#modalDownload button
+{
+    border: 1px solid #D8131A;
+    border-radius: 5px;
+    background: #D8131A;
+    margin-top: 10%;
+}
+
+#modalDownload button:hover
+{
+    cursor: pointer;
+}
+
+.content-modal
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.content-button
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 90%;
+    left: 50%; 
+}
+
+.fa-download, .fa-check
+{
+    padding-right: 2%;
+}
+
+@media screen and (max-width: 1024px){
+
+    #modal
+    {
+        height: 200px;
+    }
+
+    #modal img
+    {
+        width: 15%;
+    }
+
+    #modalDownload img
+    {
+        width: 15%;
+    }
+
+    #modalDownload p
+    {
+        font-size: 12px;
+    }
+
+    #modalDownload button
+    {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+.top-nav-collapse {
+    background-color: #ff8a65 !important; 
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #ff8a65 !important;
+    } 
+}
+.md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+h6 {
+    line-height: 1.7;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1150px; 
+    } 
+}
+
+.file-field.medium .file-path-wrapper {
+  height: 3rem; }
+  .file-field.medium .file-path-wrapper .file-path {
+    height: 2.8rem; }
+
+.file-field.big-2 .file-path-wrapper {
+  height: 3.7rem; }
+  .file-field.big-2 .file-path-wrapper .file-path {
+    height: 3.5rem; }
+
+    
