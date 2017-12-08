@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 	<head>
-		<title>email</title>
+		<meta charset="utf-8">
+		<title>Email</title>
 	</head>
-	<body>
+	<body style="background-color: #333;text-align: center;height: 100%;padding: 7% 0;">
 		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 email">
-					<h1>Mail reçu de Transfire!</h1>
-	
-					<a href="{{asset('/uploads/'.$fichier)}}">Cliquez ici pour télécharger le fichier</a>
-				</div>
-			</div>
+		<div class="email">
+			
+			<img style="max-width: 100%;width: 5%;" src="{{asset('img/transfire.png')}}" alt="Logo">
+
+			<h1 style="color: #fff;">Transfire</h1>
+			<p style="color: #fff">Vos fichiers restent au chaud pendant 7 jours !</p>
+
+			<a href="{{asset('/uploads/'.$fichier)}}">Cliquez ici pour télécharger votre fichier</a>
+
 		</div>
 		
 	</body>

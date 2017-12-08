@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>viewHome</title>
+    <title>Accueil | Transfire</title>
 
         <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -54,7 +54,7 @@
                     <div class="white-text left">
                         <h1 class="display-4 wow fadeInLeft text-center" data-wow-delay="0.3s">Transfire</h1>
                         <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                        <h6 class="wow fadeInLeft text-center" data-wow-delay="0.3s">Expérimentez LA solution la plus simple pour transférer vos fichiers partout dans le monde à la vitesse de la lumière! Croyez-nous sur parole, c'est le FEU!!</h6>
+                        <h6 class="wow fadeInLeft text-center" data-wow-delay="0.3s">Expérimentez <strong>LA</strong> solution la plus simple pour transférer vos fichiers partout dans le monde à la vitesse de la lumière! Croyez-nous sur parole, c'est le FEU!!</h6>
                         <br>
                     </div>
 
@@ -66,16 +66,16 @@
                         <h1>Envoyez vos fichiers</h1>
 
                         <i class="fa fa-user prefix grey-text"></i>
-                        <input placeholder="Nom" type="text" id="form3" name="name" class="form-control">
+                        <input placeholder="*Votre Email" type="email" id="form3" name="name" class="form-control">
                         {!! $errors->first('name', '<p class="error">:message</p>') !!}
                         
                         <i class="fa fa-envelope prefix grey-text"></i>
-                        <input placeholder="Email" type="email" id="form2" name="mail" class="form-control">
+                        <input placeholder="*Email destinataire" type="email" id="form2" name="mail" class="form-control">
 
                         {!! $errors->first('mail', '<p class="error">:message</p>') !!}
 
                         <i class="fa fa-pencil prefix grey-text"></i>
-                        <textarea placeholder="Message" type="text" id="form8" name="message" class="md-textarea"></textarea>
+                        <textarea placeholder="*Message" type="text" id="form8" name="message" class="md-textarea"></textarea>
                         {!! $errors->first('message', '<p class="error">:message</p>') !!}
 
                         <div class="file-field text-center">
@@ -85,7 +85,7 @@
                         </div>
                     
                         <div class="text-center mt-5">
-                            <button class="btn indigo lighten-2" type="submit">Uploadez</button>
+                            <button class="btn indigo lighten-2" type="submit">Envoyez</button>
                             <hr>
                         </div>
 

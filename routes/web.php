@@ -15,9 +15,6 @@
 
 Route::get('/', 'HomeViewController@index')->name('home');
 Route::post('/upload', 'HomeViewController@upload')->name('upload');
-// Route::post('/upload', function(){
-// 	return ('tutu');
-// })->name('upload');
 
 //Download
 
