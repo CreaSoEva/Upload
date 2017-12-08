@@ -18,5 +18,6 @@ Route::post('/upload', 'HomeViewController@upload')->name('upload');
 
 //Download
 
-Route::get('/download', 'DownloadViewController@index')->name('download');
+Route::get('/download/{id}', 'DownloadViewController@index')->name('download');
+Route::get('/forcedownload/{id}', 'DownloadViewController@download')->name('forcedl');
 Route::get('/downloadsuccess', 'DownloadSuccessViewController@index')->name('downloadsuccess');

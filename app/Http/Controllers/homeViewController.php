@@ -33,8 +33,7 @@ class HomeViewController extends Controller
             $form->destinataire = $request->mail;
             $form->message = $request->message;
             $form->link_files = $request->upload->getClientOriginalName();
-
-
+            
             $form->link_upload = $request->upload->hashName();
 
             $request->upload->store(config('images.path'), 'public');
@@ -43,9 +42,9 @@ class HomeViewController extends Controller
 
 
             Mail::to($form->destinataire)
-                ->send(new classMail($form->link_upload));
+                ->send(new classMail($form->id));
 
-            return('Enregisté dans la bdd');
+            return view('uploadView');
         
     }
 }

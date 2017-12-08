@@ -11,13 +11,13 @@ class classMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-   public $fichier;
+   public $id;
 
-   public function __construct($fichier)
+   public function __construct($id)
 
    {
 
-       $this->fichier = $fichier;
+       $this->id = $id;
 
    }
 

@@ -4,8 +4,7 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <title>Téléchargement | Transfire</title>
-
+		<title>Upload | Transfire</title>
 	        <!-- SCRIPTS -->
 	    <!-- JQuery -->
 	    <script type="text/javascript" src="{{asset('js/jquery-3.2.1.js')}}"></script>
@@ -28,21 +27,7 @@
 	</head>
 	<body>
 		
-		<div id="modalDownload" class="text-center">
-
-	        <img src="img/transfire.png" alt="Logo">
-
-	        <div class="content-modal">
-	            <p>Echec du lancement<br>Mise à feu annulée...<br>Vos fichiers n'ont pas pu être téléchargés</p>
-	        </div>
-
-	        <div class="content-button">
-	            <a href="{{route('home')}}"><button>< Retour à l'accueil</button></a>
-	        </div>
-
-    	</div>
-
-	    <main>
+		<main>
 
 	        <div class="container-fluid">
 	            
@@ -53,35 +38,37 @@
 	                    <div class="white-text left">
 	                        <h1 class="display-4 wow fadeInLeft text-center" data-wow-delay="0.3s">Transfire</h1>
 	                        <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-	                        <h6 class="wow fadeInLeft text-center" data-wow-delay="0.3s">Expérimentez LA solution la plus simple pour transférer vos fichiers partout dans le monde à la vitesse de la lumière! Croyez-nous sur parole, c'est le FEU!!</h6>
+	                        <h6 class="wow fadeInLeft text-center" data-wow-delay="0.3s">Expérimentez <strong>LA</strong> solution la plus simple pour transférer vos fichiers partout dans le monde à la vitesse de la lumière! Croyez-nous sur parole, c'est le FEU!!</h6>
 	                        <br>
 	                    </div>
 
 	                </div>
 
-		                <div class="col-md-4 right-upload">
-		                        
-		                        <h1 class="text-center"><i class="fa fa-download" aria-hidden="true"></i>Prêt ? Partez !</h1>
+	                <div class="col-md-4 right text-center">
+	                    <form method="GET" action="{{ route('home') }}" enctype="multipart/form-data">
+	                        {{ csrf_field() }}
 
-		                        <p class="text-center">Vos fichiers restent au chaud pendant 7 jours</p>
-								
-								<p>{{$ligne->expediteur}}</p>
-								<p>{{$ligne->link_files}}</p>
-		                    
-		                        <div class="text-center mt-5">
-		                            <a class="btn indigo lighten-2" href="{{ route('forcedl', ['id'=>$ligne->id])}}">Transfire</a>
-		                            <hr>
-		                        </div>
+	                        <img id="imgupload" src="{{asset('img/transfire.png')}}" alt="Logo" width="10%">
+	                        <h1 id="titreupload">Vos fichiers ont été envoyés avec succès</h1>
+	                        <p class="text-center textupload">Le destinataire recevra un email dans quelques instant</p>
 
-		                </div>
+							
+	                    
+	                        <div class="text-center mt-5">
+	                            <button class="btn indigo lighten-2" type="submit">Retour à l'accueil</button>
+	                            <hr>
+	                        </div>
+
+	                    </form>
+	                </div>
 
 	            </div><!--ROW-->
 
 	        </div>
 
-	    </main>
+    	</main>
     
-    <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
+    	<script type="text/javascript" src="{{asset('js/script.js')}}"></script>
 
 	</body>
 </html>

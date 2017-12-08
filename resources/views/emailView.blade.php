@@ -12,8 +12,9 @@
 
 			<h1 style="color: #fff;">Transfire</h1>
 			<p style="color: #fff">Vos fichiers restent au chaud pendant 7 jours !</p>
+			
 
-			<a href="{{asset('/uploads/'.$fichier)}}">Cliquez ici pour télécharger votre fichier</a>
+			<a href="{{route('download',['id' => $id])}}">Cliquez ici pour télécharger votre fichier</a>
 
 		</div>
 		
