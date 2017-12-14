@@ -42,7 +42,7 @@ class HomeViewController extends Controller
 
 
             Mail::to($form->destinataire)
-                ->send(new classMail($form->id));
+                ->send(new classMail($form->id));//Envoie le mail que au adresse OVH reste à configurer le reste
 
             return view('uploadView');
         
